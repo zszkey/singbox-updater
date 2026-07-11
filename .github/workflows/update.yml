@@ -2,8 +2,8 @@ name: 更新 Sing-box 节点
 
 on:
   schedule:
-    - cron: '0 * * * *'   # 每 1 小时刷新
-  workflow_dispatch:         # 也支持手动触发
+    - cron: '0 * * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -28,12 +28,13 @@ jobs:
           echo "✅ 获取到 $(wc -l < nodes.txt) 行节点"
 
       - name: 生成 sing-box 配置
+        env:
+          SUB_URL: ${{ secrets.SUB_URL }}
         run: |
           python3 << 'PYEOF'
-          import json, base64, urllib.parse
+          import json, base64, urllib.parse, subprocess, os
 
-          SUB_URL = "${{ secrets.SUB_URL }}"
-          import subprocess
+          SUB_URL = os.environ.get("SUB_URL", "")
           r = subprocess.run(f'curl -sL --max-time 30 "{SUB_URL}"', shell=True, capture_output=True, timeout=30)
           decoded = base64.b64decode(r.stdout).decode("utf-8")
 
@@ -54,7 +55,6 @@ jobs:
                       port_str, query = port_str.split("?", 1)
                       params = dict(urllib.parse.parse_qsl(query))
                   port = int(port_str)
-
                   node = {
                       "type": "vless", "tag": name,
                       "server": server, "server_port": port,
@@ -78,7 +78,8 @@ jobs:
                   tag = node["tag"]
                   if tag in seen_tags:
                       s = 1
-                      while f"{tag}_{s}" in seen_tags: s += 1
+                      while f"{tag}_{s}" in seen_tags:
+                          s += 1
                       node["tag"] = f"{tag}_{s}"
                   seen_tags.add(node["tag"])
                   nodes.append(node)
@@ -107,5 +108,10 @@ jobs:
           git add config.json nodes.txt
           git diff --cached --quiet || git commit -m "🔄 节点更新 $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M')"
           git push
+
+      - name: 发送 Telegram 通知
+        if: success()
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
+        run: python3 notify_telegram.py
