@@ -115,6 +115,7 @@ jobs:
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
         run: |
-          echo "Token length: ${#TG_BOT_TOKEN}"
-          echo "Chat ID: $TG_CHAT_ID"
-          python3 notify_telegram.py
+          NODE_COUNT=$(python3 -c "import json;c=json.load(open('config.json'));print(len([o for o in c.get('outbounds',[]) if o.get('type')=='vless']))")
+          UPDATED=$(TZ='Asia/Shanghai' date '+%H:%M')
+          curl -s --max-time 10 "https://api.telegram.org/bot${TG_BOT_TOKEN}/sendMessage" \
+            -d "chat_id=${TG_CHAT_ID}&text=%E2%9C%85+%E4%BB%A3%E7%90%86%E8%8A%82%E7%82%B9%E5%B7%B2%E6%9B%B4%E6%96%B0%0A%F0%9F%95%90+${UPDATED//%20/%20}%0A%F0%9F%93%A6+${NODE_COUNT}+%E4%B8%AA%E8%8A%82%E7%82%B9&parse_mode=Markdown"
