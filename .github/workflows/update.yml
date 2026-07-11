@@ -5,6 +5,9 @@ on:
     - cron: '0 */6 * * *'   # 每 6 小时（0点/6点/12点/18点）
   workflow_dispatch:         # 也支持手动触发
 
+permissions:
+  contents: write
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -104,3 +107,5 @@ jobs:
           git add config.json nodes.txt
           git diff --cached --quiet || git commit -m "🔄 节点更新 $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M')"
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
