@@ -2,7 +2,7 @@ name: 更新 Sing-box 节点
 
 on:
   schedule:
-    - cron: '0 */6 * * *'   # 每 6 小时（0点/6点/12点/18点）
+    - cron: '0 * * * *'   # 每 1 小时刷新
   workflow_dispatch:         # 也支持手动触发
 
 permissions:
