@@ -1,0 +1,106 @@
+name: 更新 Sing-box 节点
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'   # 每 6 小时（0点/6点/12点/18点）
+  workflow_dispatch:         # 也支持手动触发
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 设置 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 拉取并解析订阅
+        env:
+          SUB_URL: ${{ secrets.SUB_URL }}
+        run: |
+          echo "📥 拉取订阅..."
+          curl -sL --max-time 30 "$SUB_URL" | base64 -d > nodes.txt
+          echo "✅ 获取到 $(wc -l < nodes.txt) 行节点"
+
+      - name: 生成 sing-box 配置
+        run: |
+          python3 << 'PYEOF'
+          import json, base64, urllib.parse
+
+          SUB_URL = "${{ secrets.SUB_URL }}"
+          import subprocess
+          r = subprocess.run(f'curl -sL --max-time 30 "{SUB_URL}"', shell=True, capture_output=True, timeout=30)
+          decoded = base64.b64decode(r.stdout).decode("utf-8")
+
+          nodes = []
+          seen_tags = set()
+          for line in decoded.strip().splitlines():
+              if not line.startswith("vless://"):
+                  continue
+              try:
+                  uuid_part, host_part = line[8:].split("@", 1)
+                  name = "CF优选"
+                  if "#" in host_part:
+                      host_part, name = host_part.rsplit("#", 1)
+                      name = urllib.parse.unquote(name)
+                  server, port_str = host_part.split(":", 1)
+                  params = {}
+                  if "?" in port_str:
+                      port_str, query = port_str.split("?", 1)
+                      params = dict(urllib.parse.parse_qsl(query))
+                  port = int(port_str)
+
+                  node = {
+                      "type": "vless", "tag": name,
+                      "server": server, "server_port": port,
+                      "uuid": uuid_part, "flow": "",
+                      "tls": {
+                          "enabled": True,
+                          "server_name": params.get("sni", params.get("host", "")),
+                          "insecure": False,
+                          "utls": {"enabled": True, "fingerprint": params.get("fp", "chrome")},
+                          "ech": {"enabled": False}
+                      },
+                      "transport": {
+                          "type": "ws",
+                          "path": params.get("path", "/"),
+                          "headers": {"Host": params.get("host", params.get("sni", ""))}
+                      }
+                  }
+                  ech_param = params.get("ech", "")
+                  if ech_param and "+" in ech_param:
+                      node["tls"]["ech"] = {"enabled": True}
+                  tag = node["tag"]
+                  if tag in seen_tags:
+                      s = 1
+                      while f"{tag}_{s}" in seen_tags: s += 1
+                      node["tag"] = f"{tag}_{s}"
+                  seen_tags.add(node["tag"])
+                  nodes.append(node)
+              except:
+                  continue
+
+          tags = [n["tag"] for n in nodes]
+          config = {
+              "log": {"level": "warn"},
+              "inbounds": [{"type": "mixed", "tag": "mixed-in", "listen": "127.0.0.1", "listen_port": 7890}],
+              "outbounds": [
+                  {"type": "selector", "tag": "proxy-out", "outbounds": tags + ["auto"], "default": "auto"},
+                  {"type": "urltest", "tag": "auto", "outbounds": tags, "url": "https://www.gstatic.com/generate_204", "interval": "5m", "tolerance": 50}
+              ] + nodes
+          }
+
+          with open("config.json", "w", encoding="utf-8") as f:
+              json.dump(config, f, ensure_ascii=False, indent=2)
+          print(f"✅ 生成配置: {len(nodes)} 个节点")
+          PYEOF
+
+      - name: 提交更新
+        run: |
+          git config user.name "singbox-bot"
+          git config user.email "bot@singbox-update"
+          git add config.json nodes.txt
+          git diff --cached --quiet || git commit -m "🔄 节点更新 $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M')"
+          git push
