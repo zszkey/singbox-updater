@@ -229,8 +229,8 @@
     {
       "type": "vless",
       "tag": "CF官方优选1",
-      "server": "162.159.39.165",
-      "server_port": 2053,
+      "server": "173.245.58.249",
+      "server_port": 2083,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
       "tls": {
@@ -256,7 +256,7 @@
     {
       "type": "vless",
       "tag": "CF官方优选2",
-      "server": "104.26.0.206",
+      "server": "8.35.211.207",
       "server_port": 2087,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
@@ -283,7 +283,7 @@
     {
       "type": "vless",
       "tag": "CF官方优选3",
-      "server": "198.41.209.134",
+      "server": "172.66.3.31",
       "server_port": 2096,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
@@ -310,277 +310,7 @@
     {
       "type": "vless",
       "tag": "CF官方优选4",
-      "server": "104.17.102.148",
-      "server_port": 2096,
-      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
-      "flow": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "shin-ra.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shin-ra.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "CF官方优选5",
-      "server": "108.162.198.178",
-      "server_port": 8443,
-      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
-      "flow": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "shin-ra.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shin-ra.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "CF官方优选6",
-      "server": "198.41.209.40",
-      "server_port": 2087,
-      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
-      "flow": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "shin-ra.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shin-ra.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "CF官方优选7",
-      "server": "104.26.2.127",
-      "server_port": 2053,
-      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
-      "flow": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "shin-ra.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shin-ra.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "CF官方优选8",
-      "server": "104.19.35.74",
-      "server_port": 2096,
-      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
-      "flow": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "shin-ra.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shin-ra.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "CF官方优选9",
-      "server": "104.18.33.250",
-      "server_port": 2096,
-      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
-      "flow": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "shin-ra.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shin-ra.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "CF官方优选10",
-      "server": "198.41.208.143",
-      "server_port": 2053,
-      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
-      "flow": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "shin-ra.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shin-ra.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "CF官方优选11",
-      "server": "173.245.58.132",
-      "server_port": 2087,
-      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
-      "flow": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "shin-ra.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shin-ra.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "CF官方优选12",
-      "server": "91.193.59.26",
-      "server_port": 2053,
-      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
-      "flow": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "shin-ra.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shin-ra.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "CF官方优选13",
-      "server": "104.16.145.123",
-      "server_port": 2087,
-      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
-      "flow": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "shin-ra.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shin-ra.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "CF官方优选14",
-      "server": "198.41.208.208",
+      "server": "104.17.219.178",
       "server_port": 443,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
@@ -606,8 +336,143 @@
     },
     {
       "type": "vless",
-      "tag": "CF官方优选15",
-      "server": "198.41.209.222",
+      "tag": "CF官方优选5",
+      "server": "104.17.118.173",
+      "server_port": 2087,
+      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "shin-ra.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "ech": {
+          "enabled": true
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shin-ra.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "CF官方优选6",
+      "server": "91.193.58.113",
+      "server_port": 8443,
+      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "shin-ra.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "ech": {
+          "enabled": true
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shin-ra.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "CF官方优选7",
+      "server": "104.17.115.175",
+      "server_port": 443,
+      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "shin-ra.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "ech": {
+          "enabled": true
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shin-ra.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "CF官方优选8",
+      "server": "104.17.54.45",
+      "server_port": 2053,
+      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "shin-ra.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "ech": {
+          "enabled": true
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shin-ra.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "CF官方优选9",
+      "server": "172.66.3.51",
+      "server_port": 2053,
+      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "shin-ra.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "ech": {
+          "enabled": true
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shin-ra.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "CF官方优选10",
+      "server": "104.26.2.141",
       "server_port": 2083,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
@@ -633,9 +498,144 @@
     },
     {
       "type": "vless",
+      "tag": "CF官方优选11",
+      "server": "104.17.147.51",
+      "server_port": 443,
+      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "shin-ra.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "ech": {
+          "enabled": true
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shin-ra.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "CF官方优选12",
+      "server": "104.17.217.167",
+      "server_port": 8443,
+      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "shin-ra.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "ech": {
+          "enabled": true
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shin-ra.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "CF官方优选13",
+      "server": "108.162.198.22",
+      "server_port": 443,
+      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "shin-ra.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "ech": {
+          "enabled": true
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shin-ra.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "CF官方优选14",
+      "server": "188.164.248.67",
+      "server_port": 8443,
+      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "shin-ra.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "ech": {
+          "enabled": true
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shin-ra.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "CF官方优选15",
+      "server": "108.162.198.216",
+      "server_port": 8443,
+      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "shin-ra.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "ech": {
+          "enabled": true
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shin-ra.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "CF官方优选16",
-      "server": "104.17.97.6",
-      "server_port": 2096,
+      "server": "104.26.12.9",
+      "server_port": 2087,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
       "tls": {
@@ -661,7 +661,7 @@
     {
       "type": "vless",
       "tag": "CF官方优选17",
-      "server": "198.41.209.160",
+      "server": "188.164.248.69",
       "server_port": 2083,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
@@ -688,8 +688,8 @@
     {
       "type": "vless",
       "tag": "CF官方优选18",
-      "server": "104.19.35.203",
-      "server_port": 8443,
+      "server": "104.19.35.84",
+      "server_port": 443,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
       "tls": {
@@ -715,8 +715,8 @@
     {
       "type": "vless",
       "tag": "CF官方优选19",
-      "server": "104.17.223.246",
-      "server_port": 2083,
+      "server": "172.67.68.45",
+      "server_port": 8443,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
       "tls": {
@@ -742,7 +742,7 @@
     {
       "type": "vless",
       "tag": "CF官方优选20",
-      "server": "104.17.55.209",
+      "server": "162.159.33.176",
       "server_port": 8443,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
@@ -769,8 +769,8 @@
     {
       "type": "vless",
       "tag": "CF官方优选21",
-      "server": "162.159.43.233",
-      "server_port": 2053,
+      "server": "198.41.223.133",
+      "server_port": 2087,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
       "tls": {
@@ -796,8 +796,8 @@
     {
       "type": "vless",
       "tag": "CF官方优选22",
-      "server": "104.18.33.247",
-      "server_port": 443,
+      "server": "104.17.111.163",
+      "server_port": 2083,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
       "tls": {
@@ -823,7 +823,7 @@
     {
       "type": "vless",
       "tag": "CF官方优选23",
-      "server": "173.245.59.186",
+      "server": "104.17.63.241",
       "server_port": 2053,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
@@ -850,34 +850,7 @@
     {
       "type": "vless",
       "tag": "CF官方优选24",
-      "server": "104.17.122.212",
-      "server_port": 2087,
-      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
-      "flow": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "shin-ra.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shin-ra.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "CF官方优选25",
-      "server": "108.162.198.167",
+      "server": "104.17.96.193",
       "server_port": 8443,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
@@ -903,9 +876,36 @@
     },
     {
       "type": "vless",
+      "tag": "CF官方优选25",
+      "server": "104.19.52.253",
+      "server_port": 2087,
+      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "shin-ra.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "ech": {
+          "enabled": true
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shin-ra.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "CF官方优选26",
-      "server": "104.17.22.146",
-      "server_port": 443,
+      "server": "104.19.33.244",
+      "server_port": 2096,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
       "tls": {
@@ -931,8 +931,8 @@
     {
       "type": "vless",
       "tag": "CF官方优选27",
-      "server": "104.16.243.204",
-      "server_port": 2083,
+      "server": "104.17.220.59",
+      "server_port": 2087,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
       "tls": {
@@ -958,8 +958,8 @@
     {
       "type": "vless",
       "tag": "CF官方优选28",
-      "server": "104.19.53.82",
-      "server_port": 2053,
+      "server": "198.41.209.174",
+      "server_port": 2087,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
       "tls": {
@@ -985,7 +985,7 @@
     {
       "type": "vless",
       "tag": "CF官方优选29",
-      "server": "104.19.144.86",
+      "server": "104.17.213.253",
       "server_port": 2096,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
@@ -1012,7 +1012,7 @@
     {
       "type": "vless",
       "tag": "CF官方优选30",
-      "server": "172.67.68.11",
+      "server": "198.41.208.133",
       "server_port": 2096,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
@@ -1039,88 +1039,7 @@
     {
       "type": "vless",
       "tag": "CF官方优选31",
-      "server": "172.67.65.226",
-      "server_port": 2083,
-      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
-      "flow": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "shin-ra.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shin-ra.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "CF官方优选32",
-      "server": "104.18.33.4",
-      "server_port": 2083,
-      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
-      "flow": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "shin-ra.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shin-ra.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "CF官方优选33",
-      "server": "173.245.59.89",
-      "server_port": 2053,
-      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
-      "flow": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "shin-ra.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shin-ra.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "CF官方优选34",
-      "server": "108.162.198.19",
+      "server": "104.17.102.123",
       "server_port": 2087,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
@@ -1146,35 +1065,8 @@
     },
     {
       "type": "vless",
-      "tag": "CF官方优选35",
-      "server": "198.41.223.217",
-      "server_port": 2096,
-      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
-      "flow": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "shin-ra.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shin-ra.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "CF官方优选36",
-      "server": "173.245.59.250",
+      "tag": "CF官方优选32",
+      "server": "104.17.31.224",
       "server_port": 8443,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
@@ -1200,9 +1092,117 @@
     },
     {
       "type": "vless",
+      "tag": "CF官方优选33",
+      "server": "104.17.29.247",
+      "server_port": 443,
+      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "shin-ra.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "ech": {
+          "enabled": true
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shin-ra.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "CF官方优选34",
+      "server": "104.17.215.147",
+      "server_port": 2096,
+      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "shin-ra.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "ech": {
+          "enabled": true
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shin-ra.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "CF官方优选35",
+      "server": "198.41.208.160",
+      "server_port": 2087,
+      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "shin-ra.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "ech": {
+          "enabled": true
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shin-ra.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "CF官方优选36",
+      "server": "104.19.52.19",
+      "server_port": 443,
+      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "shin-ra.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "ech": {
+          "enabled": true
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shin-ra.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "CF官方优选37",
-      "server": "104.17.104.255",
-      "server_port": 2083,
+      "server": "104.19.51.14",
+      "server_port": 443,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
       "tls": {
@@ -1228,7 +1228,7 @@
     {
       "type": "vless",
       "tag": "CF官方优选38",
-      "server": "104.16.240.201",
+      "server": "104.17.120.230",
       "server_port": 2096,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
@@ -1255,7 +1255,7 @@
     {
       "type": "vless",
       "tag": "CF官方优选39",
-      "server": "162.159.32.203",
+      "server": "198.41.208.111",
       "server_port": 2083,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
@@ -1282,8 +1282,8 @@
     {
       "type": "vless",
       "tag": "CF官方优选40",
-      "server": "162.159.38.115",
-      "server_port": 443,
+      "server": "104.16.255.171",
+      "server_port": 2096,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
       "tls": {
@@ -1309,8 +1309,8 @@
     {
       "type": "vless",
       "tag": "CF官方优选41",
-      "server": "104.17.28.195",
-      "server_port": 2083,
+      "server": "91.193.58.131",
+      "server_port": 8443,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
       "tls": {
@@ -1336,8 +1336,8 @@
     {
       "type": "vless",
       "tag": "CF官方优选42",
-      "server": "91.193.59.73",
-      "server_port": 443,
+      "server": "104.16.240.211",
+      "server_port": 8443,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
       "tls": {
@@ -1363,8 +1363,8 @@
     {
       "type": "vless",
       "tag": "CF官方优选43",
-      "server": "108.162.198.203",
-      "server_port": 2083,
+      "server": "104.17.105.185",
+      "server_port": 2096,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
       "tls": {
@@ -1390,7 +1390,7 @@
     {
       "type": "vless",
       "tag": "CF官方优选44",
-      "server": "104.16.148.109",
+      "server": "104.19.148.189",
       "server_port": 443,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
@@ -1417,8 +1417,8 @@
     {
       "type": "vless",
       "tag": "CF官方优选45",
-      "server": "188.164.248.19",
-      "server_port": 2096,
+      "server": "104.16.246.19",
+      "server_port": 2083,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
       "tls": {
@@ -1444,7 +1444,7 @@
     {
       "type": "vless",
       "tag": "CF官方优选46",
-      "server": "104.26.12.202",
+      "server": "104.19.150.3",
       "server_port": 443,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
@@ -1471,142 +1471,7 @@
     {
       "type": "vless",
       "tag": "CF官方优选47",
-      "server": "172.67.68.162",
-      "server_port": 2083,
-      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
-      "flow": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "shin-ra.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shin-ra.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "CF官方优选48",
-      "server": "104.17.171.230",
-      "server_port": 2053,
-      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
-      "flow": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "shin-ra.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shin-ra.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "CF官方优选49",
-      "server": "108.162.198.15",
-      "server_port": 2083,
-      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
-      "flow": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "shin-ra.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shin-ra.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "CF官方优选50",
-      "server": "172.67.77.49",
-      "server_port": 2053,
-      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
-      "flow": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "shin-ra.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shin-ra.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "CF官方优选51",
-      "server": "8.39.125.19",
-      "server_port": 2096,
-      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
-      "flow": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "shin-ra.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shin-ra.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "CF官方优选52",
-      "server": "104.17.208.238",
+      "server": "198.41.208.167",
       "server_port": 8443,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
@@ -1632,35 +1497,8 @@
     },
     {
       "type": "vless",
-      "tag": "CF官方优选53",
-      "server": "162.159.39.94",
-      "server_port": 2053,
-      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
-      "flow": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "shin-ra.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shin-ra.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "CF官方优选54",
-      "server": "104.18.33.17",
+      "tag": "CF官方优选48",
+      "server": "104.16.156.132",
       "server_port": 2087,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
@@ -1686,8 +1524,170 @@
     },
     {
       "type": "vless",
+      "tag": "CF官方优选49",
+      "server": "198.41.209.220",
+      "server_port": 2053,
+      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "shin-ra.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "ech": {
+          "enabled": true
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shin-ra.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "CF官方优选50",
+      "server": "172.67.75.72",
+      "server_port": 8443,
+      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "shin-ra.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "ech": {
+          "enabled": true
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shin-ra.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "CF官方优选51",
+      "server": "104.16.156.233",
+      "server_port": 443,
+      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "shin-ra.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "ech": {
+          "enabled": true
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shin-ra.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "CF官方优选52",
+      "server": "104.17.218.1",
+      "server_port": 2053,
+      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "shin-ra.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "ech": {
+          "enabled": true
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shin-ra.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "CF官方优选53",
+      "server": "8.35.211.188",
+      "server_port": 2087,
+      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "shin-ra.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "ech": {
+          "enabled": true
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shin-ra.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "CF官方优选54",
+      "server": "104.17.215.69",
+      "server_port": 8443,
+      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "shin-ra.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "ech": {
+          "enabled": true
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shin-ra.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "CF官方优选55",
-      "server": "104.19.33.184",
+      "server": "198.41.209.81",
       "server_port": 2096,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
@@ -1714,8 +1714,8 @@
     {
       "type": "vless",
       "tag": "CF官方优选56",
-      "server": "172.66.3.250",
-      "server_port": 8443,
+      "server": "8.35.211.126",
+      "server_port": 2087,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
       "tls": {
@@ -1741,8 +1741,8 @@
     {
       "type": "vless",
       "tag": "CF官方优选57",
-      "server": "172.67.78.191",
-      "server_port": 2053,
+      "server": "104.17.165.254",
+      "server_port": 2087,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
       "tls": {
@@ -1768,8 +1768,8 @@
     {
       "type": "vless",
       "tag": "CF官方优选58",
-      "server": "162.159.38.126",
-      "server_port": 8443,
+      "server": "8.39.125.226",
+      "server_port": 2096,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
       "tls": {
@@ -1795,7 +1795,7 @@
     {
       "type": "vless",
       "tag": "CF官方优选59",
-      "server": "173.245.59.102",
+      "server": "172.67.68.12",
       "server_port": 2096,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
@@ -1822,8 +1822,8 @@
     {
       "type": "vless",
       "tag": "CF官方优选60",
-      "server": "104.17.22.17",
-      "server_port": 8443,
+      "server": "198.41.209.27",
+      "server_port": 2096,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
       "tls": {
@@ -1849,7 +1849,7 @@
     {
       "type": "vless",
       "tag": "CF官方优选61",
-      "server": "104.26.5.20",
+      "server": "104.17.156.200",
       "server_port": 2087,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
@@ -1876,7 +1876,7 @@
     {
       "type": "vless",
       "tag": "CF官方优选62",
-      "server": "172.67.69.252",
+      "server": "104.19.148.141",
       "server_port": 443,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
@@ -1903,88 +1903,7 @@
     {
       "type": "vless",
       "tag": "CF官方优选63",
-      "server": "104.26.4.62",
-      "server_port": 2087,
-      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
-      "flow": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "shin-ra.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shin-ra.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "CF官方优选64",
-      "server": "104.17.107.91",
-      "server_port": 2096,
-      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
-      "flow": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "shin-ra.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shin-ra.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "CF官方优选65",
-      "server": "104.17.144.61",
-      "server_port": 2087,
-      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
-      "flow": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "shin-ra.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shin-ra.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "CF官方优选66",
-      "server": "104.17.108.23",
+      "server": "172.66.3.78",
       "server_port": 8443,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
@@ -2010,9 +1929,90 @@
     },
     {
       "type": "vless",
+      "tag": "CF官方优选64",
+      "server": "162.159.45.112",
+      "server_port": 2083,
+      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "shin-ra.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "ech": {
+          "enabled": true
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shin-ra.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "CF官方优选65",
+      "server": "8.35.211.100",
+      "server_port": 443,
+      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "shin-ra.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "ech": {
+          "enabled": true
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shin-ra.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "CF官方优选66",
+      "server": "162.159.39.91",
+      "server_port": 2053,
+      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "shin-ra.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "ech": {
+          "enabled": true
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shin-ra.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "CF官方优选67",
-      "server": "104.19.144.61",
-      "server_port": 2096,
+      "server": "104.17.25.188",
+      "server_port": 8443,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
       "tls": {
@@ -2038,7 +2038,7 @@
     {
       "type": "vless",
       "tag": "CF官方优选68",
-      "server": "104.17.188.210",
+      "server": "104.19.146.113",
       "server_port": 8443,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
@@ -2065,8 +2065,8 @@
     {
       "type": "vless",
       "tag": "CF官方优选69",
-      "server": "104.17.215.255",
-      "server_port": 8443,
+      "server": "198.41.209.160",
+      "server_port": 2083,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
       "tls": {
@@ -2092,7 +2092,7 @@
     {
       "type": "vless",
       "tag": "CF官方优选70",
-      "server": "104.19.145.96",
+      "server": "104.16.149.94",
       "server_port": 443,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
@@ -2119,8 +2119,8 @@
     {
       "type": "vless",
       "tag": "CF官方优选71",
-      "server": "173.245.59.247",
-      "server_port": 443,
+      "server": "162.159.38.118",
+      "server_port": 2083,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
       "tls": {
@@ -2146,250 +2146,7 @@
     {
       "type": "vless",
       "tag": "CF官方优选72",
-      "server": "8.39.125.248",
-      "server_port": 8443,
-      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
-      "flow": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "shin-ra.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shin-ra.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "CF官方优选73",
-      "server": "104.17.55.254",
-      "server_port": 8443,
-      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
-      "flow": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "shin-ra.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shin-ra.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "CF官方优选74",
-      "server": "104.16.150.86",
-      "server_port": 2096,
-      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
-      "flow": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "shin-ra.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shin-ra.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "CF官方优选75",
-      "server": "162.159.39.44",
-      "server_port": 8443,
-      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
-      "flow": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "shin-ra.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shin-ra.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "CF官方优选76",
-      "server": "162.159.32.182",
-      "server_port": 2087,
-      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
-      "flow": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "shin-ra.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shin-ra.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "CF官方优选77",
-      "server": "8.35.211.173",
-      "server_port": 2087,
-      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
-      "flow": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "shin-ra.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shin-ra.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "CF官方优选78",
-      "server": "104.17.101.98",
-      "server_port": 2096,
-      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
-      "flow": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "shin-ra.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shin-ra.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "CF官方优选79",
-      "server": "104.17.173.3",
-      "server_port": 8443,
-      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
-      "flow": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "shin-ra.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shin-ra.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "CF官方优选80",
-      "server": "172.66.1.228",
-      "server_port": 2053,
-      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
-      "flow": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "shin-ra.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shin-ra.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "CF官方优选81",
-      "server": "104.19.32.23",
+      "server": "8.35.211.53",
       "server_port": 443,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
@@ -2415,8 +2172,251 @@
     },
     {
       "type": "vless",
+      "tag": "CF官方优选73",
+      "server": "104.17.111.72",
+      "server_port": 2096,
+      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "shin-ra.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "ech": {
+          "enabled": true
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shin-ra.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "CF官方优选74",
+      "server": "91.193.59.192",
+      "server_port": 2083,
+      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "shin-ra.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "ech": {
+          "enabled": true
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shin-ra.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "CF官方优选75",
+      "server": "104.18.33.249",
+      "server_port": 2053,
+      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "shin-ra.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "ech": {
+          "enabled": true
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shin-ra.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "CF官方优选76",
+      "server": "104.19.33.115",
+      "server_port": 443,
+      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "shin-ra.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "ech": {
+          "enabled": true
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shin-ra.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "CF官方优选77",
+      "server": "104.16.242.217",
+      "server_port": 8443,
+      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "shin-ra.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "ech": {
+          "enabled": true
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shin-ra.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "CF官方优选78",
+      "server": "91.193.59.5",
+      "server_port": 2087,
+      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "shin-ra.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "ech": {
+          "enabled": true
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shin-ra.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "CF官方优选79",
+      "server": "104.17.184.93",
+      "server_port": 2087,
+      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "shin-ra.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "ech": {
+          "enabled": true
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shin-ra.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "CF官方优选80",
+      "server": "91.193.59.60",
+      "server_port": 2096,
+      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "shin-ra.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "ech": {
+          "enabled": true
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shin-ra.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "CF官方优选81",
+      "server": "104.16.144.251",
+      "server_port": 2083,
+      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "shin-ra.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "ech": {
+          "enabled": true
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shin-ra.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "CF官方优选82",
-      "server": "162.159.47.104",
+      "server": "91.193.59.186",
       "server_port": 8443,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
@@ -2443,7 +2443,7 @@
     {
       "type": "vless",
       "tag": "CF官方优选83",
-      "server": "8.39.125.171",
+      "server": "104.17.219.59",
       "server_port": 2053,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
@@ -2470,7 +2470,7 @@
     {
       "type": "vless",
       "tag": "CF官方优选84",
-      "server": "104.19.147.56",
+      "server": "104.17.63.151",
       "server_port": 443,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
@@ -2497,8 +2497,8 @@
     {
       "type": "vless",
       "tag": "CF官方优选85",
-      "server": "198.41.223.201",
-      "server_port": 2053,
+      "server": "172.67.74.44",
+      "server_port": 8443,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
       "tls": {
@@ -2524,7 +2524,7 @@
     {
       "type": "vless",
       "tag": "CF官方优选86",
-      "server": "173.245.59.87",
+      "server": "198.41.208.81",
       "server_port": 443,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
@@ -2551,8 +2551,8 @@
     {
       "type": "vless",
       "tag": "CF官方优选87",
-      "server": "108.162.198.226",
-      "server_port": 2096,
+      "server": "8.35.211.223",
+      "server_port": 8443,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
       "tls": {
@@ -2578,7 +2578,7 @@
     {
       "type": "vless",
       "tag": "CF官方优选88",
-      "server": "104.17.176.201",
+      "server": "104.19.147.31",
       "server_port": 2096,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
@@ -2605,7 +2605,7 @@
     {
       "type": "vless",
       "tag": "CF官方优选89",
-      "server": "104.19.48.222",
+      "server": "104.18.33.251",
       "server_port": 2096,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
@@ -2632,8 +2632,8 @@
     {
       "type": "vless",
       "tag": "CF官方优选90",
-      "server": "198.41.223.19",
-      "server_port": 2087,
+      "server": "8.35.211.156",
+      "server_port": 443,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
       "tls": {
@@ -2659,8 +2659,8 @@
     {
       "type": "vless",
       "tag": "CF官方优选91",
-      "server": "104.18.33.137",
-      "server_port": 2087,
+      "server": "162.159.39.12",
+      "server_port": 8443,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
       "tls": {
@@ -2686,8 +2686,8 @@
     {
       "type": "vless",
       "tag": "CF官方优选92",
-      "server": "104.17.62.46",
-      "server_port": 2083,
+      "server": "173.245.59.240",
+      "server_port": 443,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
       "tls": {
@@ -2713,34 +2713,7 @@
     {
       "type": "vless",
       "tag": "CF官方优选93",
-      "server": "104.17.220.231",
-      "server_port": 443,
-      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
-      "flow": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "shin-ra.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shin-ra.ccwu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "CF官方优选94",
-      "server": "104.17.108.23",
+      "server": "104.17.96.142",
       "server_port": 2096,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
@@ -2766,9 +2739,36 @@
     },
     {
       "type": "vless",
+      "tag": "CF官方优选94",
+      "server": "104.17.49.218",
+      "server_port": 2087,
+      "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "shin-ra.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "ech": {
+          "enabled": true
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shin-ra.ccwu.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "CF官方优选95",
-      "server": "104.17.221.33",
-      "server_port": 443,
+      "server": "104.17.213.231",
+      "server_port": 2087,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
       "tls": {
@@ -2794,7 +2794,7 @@
     {
       "type": "vless",
       "tag": "CF官方优选96",
-      "server": "198.41.223.77",
+      "server": "173.245.59.55",
       "server_port": 2053,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
@@ -2821,7 +2821,7 @@
     {
       "type": "vless",
       "tag": "CF官方优选97",
-      "server": "104.17.168.20",
+      "server": "172.66.2.232",
       "server_port": 443,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
@@ -2848,8 +2848,8 @@
     {
       "type": "vless",
       "tag": "CF官方优选98",
-      "server": "104.17.53.53",
-      "server_port": 2087,
+      "server": "8.35.211.69",
+      "server_port": 2053,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
       "tls": {
@@ -2875,8 +2875,8 @@
     {
       "type": "vless",
       "tag": "CF官方优选99",
-      "server": "104.17.160.10",
-      "server_port": 2096,
+      "server": "104.17.125.209",
+      "server_port": 2053,
       "uuid": "817b61c8-9bf0-4365-8a52-e43dfad274a6",
       "flow": "",
       "tls": {
