@@ -1,4 +1,4 @@
-name: 更新 Sing-box 节点
+name: 更新 Sing-box 节点 (多源)
 
 on:
   schedule:
@@ -19,93 +19,14 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: 拉取并解析订阅
-        env:
-          SUB_URL: ${{ secrets.SUB_URL }}
-        run: |
-          echo "📥 拉取订阅..."
-          curl -sL --max-time 30 "$SUB_URL" | base64 -d > nodes.txt
-          echo "✅ 获取到 $(wc -l < nodes.txt) 行节点"
-
-      - name: 生成 sing-box 配置
-        env:
-          SUB_URL: ${{ secrets.SUB_URL }}
-        run: |
-          python3 << 'PYEOF'
-          import json, base64, urllib.parse, subprocess, os
-
-          SUB_URL = os.environ.get("SUB_URL", "")
-          r = subprocess.run(f'curl -sL --max-time 30 "{SUB_URL}"', shell=True, capture_output=True, timeout=30)
-          decoded = base64.b64decode(r.stdout).decode("utf-8")
-
-          nodes = []
-          seen_tags = set()
-          for line in decoded.strip().splitlines():
-              if not line.startswith("vless://"):
-                  continue
-              try:
-                  uuid_part, host_part = line[8:].split("@", 1)
-                  name = "CF优选"
-                  if "#" in host_part:
-                      host_part, name = host_part.rsplit("#", 1)
-                      name = urllib.parse.unquote(name)
-                  server, port_str = host_part.split(":", 1)
-                  params = {}
-                  if "?" in port_str:
-                      port_str, query = port_str.split("?", 1)
-                      params = dict(urllib.parse.parse_qsl(query))
-                  port = int(port_str)
-                  node = {
-                      "type": "vless", "tag": name,
-                      "server": server, "server_port": port,
-                      "uuid": uuid_part, "flow": "",
-                      "tls": {
-                          "enabled": True,
-                          "server_name": params.get("sni", params.get("host", "")),
-                          "insecure": False,
-                          "utls": {"enabled": True, "fingerprint": params.get("fp", "chrome")},
-                          "ech": {"enabled": False}
-                      },
-                      "transport": {
-                          "type": "ws",
-                          "path": params.get("path", "/"),
-                          "headers": {"Host": params.get("host", params.get("sni", ""))}
-                      }
-                  }
-                  ech_param = params.get("ech", "")
-                  if ech_param and "+" in ech_param:
-                      node["tls"]["ech"] = {"enabled": True}
-                  tag = node["tag"]
-                  if tag in seen_tags:
-                      s = 1
-                      while f"{tag}_{s}" in seen_tags:
-                          s += 1
-                      node["tag"] = f"{tag}_{s}"
-                  seen_tags.add(node["tag"])
-                  nodes.append(node)
-              except:
-                  continue
-
-          tags = [n["tag"] for n in nodes]
-          config = {
-              "log": {"level": "warn"},
-              "inbounds": [{"type": "mixed", "tag": "mixed-in", "listen": "127.0.0.1", "listen_port": 7890}],
-              "outbounds": [
-                  {"type": "selector", "tag": "proxy-out", "outbounds": tags + ["auto"], "default": "auto"},
-                  {"type": "urltest", "tag": "auto", "outbounds": tags, "url": "https://www.gstatic.com/generate_204", "interval": "5m", "tolerance": 50}
-              ] + nodes
-          }
-
-          with open("config.json", "w", encoding="utf-8") as f:
-              json.dump(config, f, ensure_ascii=False, indent=2)
-          print(f"✅ 生成配置: {len(nodes)} 个节点")
-          PYEOF
+      - name: 多源拉取并生成配置
+        run: python3 .github/scripts/update.py
 
       - name: 提交更新
         run: |
           git config user.name "singbox-bot"
           git config user.email "bot@singbox-update"
-          git add config.json nodes.txt
+          git add config.json sub.txt
           git diff --cached --quiet || git commit -m "🔄 节点更新 $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M')"
           git push
 
@@ -115,7 +36,11 @@ jobs:
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
         run: |
-          NODE_COUNT=$(python3 -c "import json;c=json.load(open('config.json'));print(len([o for o in c.get('outbounds',[]) if o.get('type')=='vless']))")
-          UPDATED=$(TZ='Asia/Shanghai' date '+%H:%M')
+          NODE_COUNT=$(cat node_count.txt 2>/dev/null || echo 0)
+          SOURCE_ORDER=$(cat source_order.txt 2>/dev/null || echo "未知")
+          UPDATED=$(TZ='Asia/Shanghai' date '+%m/%d %H:%M')
+          MSG=$(printf '✅ 代理节点已更新\n🕐 %s\n📦 %s 个节点\n🔗 来源: %s\n\n手机 Karing 订阅:\nhttps://raw.githubusercontent.com/zszkey/singbox-updater/main/sub.txt' "$UPDATED" "$NODE_COUNT" "$SOURCE_ORDER")
           curl -s --max-time 10 "https://api.telegram.org/bot${TG_BOT_TOKEN}/sendMessage" \
-            -d "chat_id=${TG_CHAT_ID}&text=%E2%9C%85+%E4%BB%A3%E7%90%86%E8%8A%82%E7%82%B9%E5%B7%B2%E6%9B%B4%E6%96%B0%0A%F0%9F%95%90+${UPDATED//%20/%20}%0A%F0%9F%93%A6+${NODE_COUNT}+%E4%B8%AA%E8%8A%82%E7%82%B9&parse_mode=Markdown"
+            -d "chat_id=${TG_CHAT_ID}" \
+            -d "text=${MSG}" \
+            -d "parse_mode=Markdown"
